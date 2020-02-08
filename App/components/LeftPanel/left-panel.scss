@@ -1,0 +1,15 @@
+.left-panel-holder {
+    width: 50%;
+    float: left;
+    font-size: 20px;
+
+    &-heading {
+        font-size: 75px;
+        line-height: 1.1;
+        color: #FFFFA8;
+    }
+
+    &-sub-heading {
+        font-size: 25px;
+    }
+}

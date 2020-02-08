@@ -1,7 +1,6 @@
 import Root from "./root";
 import ReactDOM from 'react-dom'
 import React from "react";
-import RootStore from "./Store";
-import { Provider } from "mobx-react";
+import StoreProvider from "./context";
 
-ReactDOM.render(<Provider rootStore={new RootStore()}><Root /></Provider>, document.getElementById("app-root"))
+ReactDOM.render(<StoreProvider><Root /></StoreProvider>, document.getElementById("app-root"))

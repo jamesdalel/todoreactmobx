@@ -13,7 +13,18 @@ const config: webpack.Configuration = {
                 test: /\.(ts|tsx|js)/,
                 loader: "babel-loader",
                 exclude: /\node_module/,
-            }
+            },
+            {
+                test: /\.s[ac]ss$/i,
+                use: [
+                  // Creates `style` nodes from JS strings
+                  'style-loader',
+                  // Translates CSS into CommonJS
+                  'css-loader',
+                  // Compiles Sass to CSS
+                  'sass-loader',
+                ],
+            },
         ]
     },
     plugins: [new HTMLWepackPlugin({
